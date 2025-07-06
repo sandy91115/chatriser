@@ -1,0 +1,23 @@
+<?php
+
+session_start();
+if (!isset($_SESSION['adminloginid'])) {
+    header("location:index.php");
+    exit;
+}
+?>
+<?php
+include('db/db-conn.php');
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $job_seeker_id = mysqli_real_escape_string($conn, $_POST['job_seeker_id']);
+    $status = mysqli_real_escape_string($conn, $_POST['status']);
+
+    // Update query
+    $sql = "UPDATE job_seekers SET status = '$status' WHERE job_seeker_id = '$job_seeker_id'";
+    if (mysqli_query($conn, $sql)) {
+        echo "<script>alert('Status updated successfully!'); window.location.href='view-job-queries.php';</script>";
+    } else {
+        echo "<script>alert('Error updating status: " . mysqli_error($conn) . "'); window.location.href='view-job-queries.php';</script>";
+    }
+}

@@ -1,0 +1,24 @@
+:root{
+	--primary-color			: #042A2D;
+	--secondary-color		: #F2F1ED;
+	--text-color			: #8F8F8F;
+	--accent-color			: #73ED7C;
+	--dark-color		    : #019297;
+	--white-color			: #FFFFFF;
+	--divider-color			: #DFE1DE;
+	--dark-divider-color	: #FFFFFF33;
+	--error-color			: rgb(230, 87, 87);
+	--default-font			: "Fustat", sans-serif;
+} 
+:root {
+  --primary-color         : #4B0082;   /* Indigo (deep purple) */
+  --secondary-color       : #F3EFFA;   /* Very light lavender background */
+  --text-color            : #6E6590;   /* Muted purple-gray for body text */
+  --accent-color          : #A259FF;   /* Vivid purple for CTAs and highlights */
+  --dark-color            : #2D1A47;   /* Dark violet, great for footers */
+  --white-color           : #FFFFFF;
+  --divider-color         : #E3D9F3;   /* Soft line dividers */
+  --dark-divider-color    : #FFFFFF33;
+  --error-color           : #D9539F;   /* Pinkish red for alerts/errors */
+  --default-font          : "Fustat", sans-serif;
+}
